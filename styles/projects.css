@@ -14,7 +14,8 @@ main, div, a{
 
 .proj-cat-lnk {
     flex-basis: 12.5%;
-    margin: 0 20px;
+    margin: 5px 20px;
+    /* white-space: nowrap; */
 }
 
 .proj-cat-lnk--all {
@@ -24,9 +25,6 @@ main, div, a{
 .grid {
     width: 98%;
     margin: 40px 1%;
-    /* position: relative;
-    max-width: 1200px;
-    margin: 50px auto; */
 }
 
 .grid-sizer,
@@ -80,32 +78,38 @@ main, div, a{
 
 @media screen and (min-width: 556px) {
     .project-categories-container {
-        height: 100px;
-        align-content: space-between;
+        flex-direction: row;
+        height: 120px;
+        align-content: flex-start;
     }
 
     .proj-cat-lnk {
-        flex-basis: 20%;
+        flex-basis: 40%;
     }
 }
 
 @media screen and (min-width: 760px) {
     .project-categories-container {
-        height: 90px;
+        height: 100px;
     }
 
     .proj-cat-lnk {
-        flex-basis: 30%;
+        height: 10px;
+        flex-basis: 24%;
+        white-space: nowrap;
     }
 }
 
-@media screen and (min-width: 978px){
+@media screen and (min-width: 1100px){
     .project-categories-container {
-        height: 60px;
+       margin: 0 5%;
     }
 
     .proj-cat-lnk {
-        flex-basis: 48%;
+        height: 20px;
+        margin: 0;
+        font-size: 14px;
+        flex-basis: 20%;
     }
 
     .grid {
@@ -114,7 +118,12 @@ main, div, a{
 
     .grid-sizer,
     .grid-item {
-        width: 23%;
+        width: 24.5%;
+        margin: 0;
+    }
+
+    .gutter-sizer {
+        width: 5px;
     }
 
     .proj-title,

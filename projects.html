@@ -74,10 +74,14 @@
                 <script>
                
                 $(document).ready(function() {
-                    $('.grid').masonry({
+                    let $grid = $('.grid').masonry({
                         itemSelector: '.grid-item',
                         gutter: '.gutter-sizer',
                         percentPosition: true,
+                        });
+                        
+                        $grid.imagesLoaded().progress( function() {
+                        $grid.masonry('layout');
                         });
                     });
                 </script>
