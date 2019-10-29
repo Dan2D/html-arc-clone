@@ -100,8 +100,16 @@ main, div, a{
 }
 
 @media screen and (min-width: 978px){
+    .project-categories-container {
+        height: 60px;
+    }
+
+    .proj-cat-lnk {
+        flex-basis: 48%;
+    }
+
     .grid {
-        margin: 0 auto;
+        margin: 40px auto;
     }
 
     .grid-sizer,
