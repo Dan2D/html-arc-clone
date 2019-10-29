@@ -29,7 +29,7 @@
         </script>
         <div class="hero-conatiner">
             <div class="header-container">
-                <header class="glass-style glass-style--dark flex">
+                <header class="header-section-container glass-style glass-style--header flex">
                     <address class="header-section header-section--address">
                         119 S MAIN ST #200, SEATTLE, WA 98104
                     </address>
@@ -42,21 +42,31 @@
                     </div>
                     <div class="header-section header-section--end"></div>
                 </header>
-                <nav class="glass-style flex">
+                <nav class="nav-section-container glass-style flex--nav">
                     <div class="nav-lnk-container nav-lnk-container--logo">
-                        <img class="site-logo" src="./assets/images/site-logo.png" alt="" >
+                        <a href="" class="site-logo">
+                            <img src="./assets/images/site-logo.png" alt="" >
+                        </a>
                     </div>
-                    <div class="nav-lnk-container">
-                        <a href="#" class="nav-lnk">PROJECTS</a>
-                    </div>
-                    <div class="nav-lnk-container">
-                        <a href="#" class="nav-lnk">OUR TEAM</a>
-                    </div>
-                    <div class="nav-lnk-container">
-                        <a href="#" class="nav-lnk">SERVICES</a>
-                    </div>
-                    <div class="nav-lnk-container nav-lnk-container--end">
-                        <a href="#" class="nav-lnk">CONTACT</a>
+                    <input id="submenu" class="submenu-checkbox" name="submenu" type="checkbox">
+                    <label class="submenu-label" for="submenu">MENU</label>
+                    <div class="menu-container">
+                        <div class="nav-lnk-container">
+                            <a href="#" class="nav-lnk">PROJECTS</a>
+                        </div>
+                        <div class="nav-lnk-container">
+                            <a href="#" class="nav-lnk">OUR TEAM</a>
+                        </div>
+                        <div class="nav-lnk-container">
+                            <a href="#" class="nav-lnk">SERVICES</a>
+                        </div>
+                        <div class="nav-lnk-container nav-lnk-container--end">
+                            <a href="#" class="nav-lnk">CONTACT</a>
+                        </div>
+                        <div class="nav-lnk-container nav-lnk-container--social">
+                            <a href="#" class="icon instagram"></a>
+                            <a href="#" class="icon linkedin"></a>
+                        </div>
                     </div>
                 </nav>
             </div>
