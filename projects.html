@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/projects.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="header-container header-container--rel">
+            <header class="header-section-container glass-style flex">
+                <address class="header-section header-section--address">
+                    119 S MAIN ST #200, SEATTLE, WA 98104
+                </address>
+                <div class="header-section header-section--phone">
+                    <span>206. 322. 3322</span> 
+                </div>
+                <div class="header-section header-section--social-icons">
+                    <a href="#" class="icon instagram"></a>
+                    <a href="#" class="icon linkedin"></a>
+                </div>
+                <div class="header-section header-section--end"></div>
+            </header>
+            <nav class="nav-section-container glass-style glass-style--blue flex--nav">
+                <div class="nav-lnk-container nav-lnk-container--logo">
+                    <a href="/" class="site-logo">
+                        <img src="./assets/images/site-logo.png" alt="" >
+                    </a>
+                </div>
+                <input id="submenu" class="submenu-checkbox" name="submenu" type="checkbox">
+                <label class="submenu-label" for="submenu">MENU</label>
+                <div class="menu-container">
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk current">PROJECTS</a>
+                    </div>
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk">OUR TEAM</a>
+                    </div>
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk">SERVICES</a>
+                    </div>
+                    <div class="nav-lnk-container nav-lnk-container--end">
+                        <a href="#" class="nav-lnk">CONTACT</a>
+                    </div>
+                    <div class="nav-lnk-container nav-lnk-container--social">
+                        <a href="#" class="icon instagram"></a>
+                        <a href="#" class="icon linkedin"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <section class="projects">
+                <div class="project-categories-container page_frame">
+                    <a href="" class="proj-cat-lnk proj-cat-lnk--all"><strong>ALL PROJECTS</strong></a>
+                    <a href="#" class="proj-cat-lnk">CIVIC</a>
+                    <a href="#" class="proj-cat-lnk">COMMUNITY &amp; AQUATIC</a>
+                    <a href="#" class="proj-cat-lnk">PARKS</a>
+                    <a href="#" class="proj-cat-lnk">HOUSING</a>
+                    <a href="#" class="proj-cat-lnk">ON THE BOARDS</a>
+                    <a href="#" class="proj-cat-lnk">NATIVE</a>
+                    <a href="#" class="proj-cat-lnk">EDUCATION</a>
+                    <a href="#" class="proj-cat-lnk">HEALTHCARE</a>
+                </div>
+                <hr class="line-separator">
+                <script>
+               
+                $(document).ready(function() {
+                    $('.grid').masonry({
+                        itemSelector: '.grid-item',
+                        gutter: '.gutter-sizer',
+                        percentPosition: true,
+                        });
+                    });
+                </script>
+                    <div class="grid">
+                        <div class="gutter-sizer"></div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-01.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">Auburn Community &amp; Youth Center</h5>
+                                <p class="proj-loc">AUBURN, WA</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-02.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">Union Gap City Hall</h5>
+                                <p class="proj-loc">UNION GAP, WA</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-03.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">Rosehill Community Center</h5>
+                                <p class="proj-loc">MULKITEO, WA</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-04.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">Covington Park</h5>
+                                <p class="proj-loc">COVINGTON, WA</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-05.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">South McClellan Apartments</h5>
+                                <p class="proj-loc">SEATTLE, WA</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-06.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">Hapo Credit Union</h5>
+                                <p class="proj-loc">VANCOUVER, WA</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-07.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">East Side Community and Aquatic Center</h5>
+                                <p class="proj-loc">TACOMA, WA</p>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <img class="proj-img" src="./assets/images/projects/proj-08.jpg" alt="">
+                            <a href="#" class="proj-lnk">
+                                <h5 class="proj-title">Fircrest Community Center and Pool</h5>
+                                <p class="proj-loc">FIRCREST, WA</p>
+                            </a>
+                        </div>
+                    </div>
+               
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="flex-footer">
+                    <div class="footer-lnks-container">
+                        <a href="#" class="footer-lnk">PROJECTS</a>
+                        <a href="#" class="footer-lnk">OUR TEAM</a>
+                        <a href="#" class="footer-lnk">SERVICES</a>
+                        <a href="#" class="footer-lnk">CONTACT</a>
+                    </div>
+                    <address class="footer-section--address">119 MAIN ST #200, SEATTLE, WA 98104</address>
+                    <small class="footer-section--copyright">&copy; 2019 ARC ARCHITECTS</small>
+                </div>
+                <a href="#" class="site-design-btn">WEBSITE DESIGN</a>
+            </div>
+        </footer>
+    </body>
+</html>
