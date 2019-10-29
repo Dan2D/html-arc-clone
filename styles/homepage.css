@@ -1,0 +1,229 @@
+:root {
+    --dark-blue: #407297;
+    --light-blue: #6996b7;
+    --gray: #6d6d6d;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+}
+
+.slick-img {
+    width: 100%;
+    height: 600px;
+}
+
+.hero-txt {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.slick-dots {
+    bottom: 100px !important;
+}
+
+.slick-dots li button {
+    border: 2px solid white !important;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 12px !important;
+    color: yellow !important;
+    right: 1px;
+    line-height: 21px !important;
+}
+
+.slick-dots li button:before {
+    color: transparent !important;
+}
+
+.slick-next,
+.slick-prev {
+    top: auto !important;
+    bottom: -30px;
+}
+
+.skewed-blurb {
+    background-image: url("../assets/images/pattern-bg.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-top: 7px solid var(--dark-blue);
+    padding: 25px 0 75px 0;
+    transform: translateY(-85px) skewY(4.4deg);
+    z-index: 2;
+}
+
+.skewed-child {
+    transform: skewY(-4.4deg);
+}
+
+.rule-dot {
+    position: relative;
+    height: 2px;
+    width: 34%;
+    background:#d2dfe9;
+}
+
+.dot  {
+    position: absolute;
+    top: -1px;
+    right: -10px;
+    width: 4px;
+    height: 4px;
+    background:#d2dfe9;
+}
+
+.skewed-blurb__main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.blurb-headline {
+    color:#3f7297;
+    font-size: 38px;
+    font-weight: 700;
+    margin-left: 70px;
+    width: 610px;
+    
+}
+
+.blurb-headline span {
+    color: var(--light-blue);
+}
+
+.blurb-txt {
+    color: var(--gray);
+    margin-left: 258px;
+    text-align: right;
+    width: 598px;
+}
+
+.blurb-txt--strong {
+    font-weight: 700;
+}
+
+.blurb-btn {
+    position: relative;
+    color: var(--gray);
+    float: right;
+    padding: 5px 30px;
+    border: 1px solid var(--gray);
+}
+
+.blurb-btn::after,
+.team-btn::after {
+    position: absolute;
+    font-family: "icons";
+    content: "\ea75"
+}
+
+.blur-btn::after {
+    top: 6px;
+    right: 10px;
+}
+
+.blurb-btn-img {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+.team {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin-top: -160px;
+    background: url("../assets/images/workplace.jpg");
+    background-size: cover;
+    z-index: 1;
+}
+
+.team-content {
+    position: absolute;
+    left: 40px;
+    bottom: -20px;
+    width: 100%;
+}
+
+.team-msg {
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    line-height: 45px;
+    margin-bottom: 150px;
+    text-align: left;
+}
+
+.team-btn-container{
+    position: relative;
+    display: flex;
+    background: var(--dark-blue);
+}
+
+.team-btn-accent {
+    margin-left: -26px;
+}
+
+.team-btn {
+    position: relative;
+    line-height: 30px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.team-btn::after {
+    right: -5px;
+}
+
+.overview-blurb-container {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 40px 50px 40px;
+}
+
+.overview-blurb__headliner {
+    color: var(--dark-blue);
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.overview-blurb__headliner span {
+    color: var(--light-blue);
+}
+
+.overview-blurb__txt {
+    color: var(--gray);
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 990px) {
+    .team-content {
+        left: auto;
+        right: 0;
+        width: 470px;
+    }
+
+    .overview-blurb-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .overview-blurb__headliner,
+    .overview-blurb__txt {
+        flex-basis: 45%;
+    }
+
+    .overview-blurb__headliner {
+        text-align: right;
+    }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/homepage.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){$(".hero-slideshow").slick({
+                arrows: true,
+                appendArrows: $('.hero-txt'),
+                dots: true,
+                autoplay: false,
+                autoplaySpeed: 4000,
+                slidestoshow: 1,
+                speed: 700
+            })});
+        </script>
+        <div class="hero-conatiner">
+            <div class="header-container">
+                <header class="glass-style glass-style--dark flex">
+                    <address class="header-section header-section--address">
+                        <span>119 S MAIN ST #200, SEATTLE, WA 98104</span> 
+                    </address>
+                    <div class="header-section header-section--phone">
+                        <span>206.322.3322</span> 
+                    </div>
+                    <div class="header-section header-section--social-icons">
+                        <a href="#" class="icon instagram"></a>
+                        <a href="#" class="icon linkedin"></a>
+                    </div>
+                    <div class="header-section header-section--end"></div>
+                </header>
+                <nav class="glass-style flex">
+                    <div class="nav-lnk-container nav-lnk-container--logo">
+                        <img class="site-logo" src="./assets/images/site-logo.png" alt="" >
+                    </div>
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk">PROJECTS</a>
+                    </div>
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk">OUR TEAM</a>
+                    </div>
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk">SERVICES</a>
+                    </div>
+                    <div class="nav-lnk-container nav-lnk-container--end">
+                        <a href="#" class="nav-lnk">CONTACT</a>
+                    </div>
+                </nav>
+            </div>
+            
+            <section class="hero">
+                <div class="hero-slideshow">
+                    <img src="./assets/images/hero-slick-01.jpg" alt="" class="slick-img">
+                    <img src="./assets/images/hero-slick-02.jpg" alt="" class="slick-img">
+                    <img src="./assets/images/hero-slick-03.jpg" alt="" class="slick-img">
+                    <img src="./assets/images/hero-slick-04.jpg" alt="" class="slick-img">
+                </div>
+                <div class="hero-txt">
+                    <img src="./assets/images/site-logo.png" alt="">
+                </div>
+            </section>
+        </div>
+        <section class="skewed-blurb">
+            <div class="skewed-child">
+                <div class="rule-dot">
+                    <div class="dot"></div>
+                </div>
+                <div class="skewed-blurb__main">
+                    <h2 class="blurb-headline">
+                        Architecture that makes <br>
+                         a difference <span>for communities</span> 
+                    </h2>
+                    <div class="blurb-txt">
+                        <p>
+                            ARC Architects was founded as Architecture Resource 
+                            Collaborative in 1976, with our first project for 
+                            Northwest Center.  The firm's mission to serve communities 
+                            and non-profits by designing delightful places continues 
+                            today.  We create spaces that contribute to the well-being 
+                            of communities, serve our clients’ mission and culture, 
+                            and are environmentally friendly.
+                        </p>
+                        <p class="blurb-txt--strong">Welcome to ARC Architects.</p> 
+                        <a href="#" class="blurb-btn">
+                            <img src="./assets/images/diamond.png" alt="" class="blurb-btn-img">
+                            
+                            SEE OUR PROJECTS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="team-content">
+                <h1 class="team-msg">we help bring community building projects to life.</h1>
+                <div class="team-btn-container">
+                    <img class="team-btn-accent" src="./assets/images/round-diamond.png" alt="">
+                    <a class="team-btn" href="#">MEET THE TEAM</a>
+                </div>
+            </div>
+        </section>
+        <div></div>
+        <secion class="overview-blurb">
+            <div class="overview-blurb-container">
+                <h1 class="overview-blurb__headliner">
+                    ARC is an epxerienced partner through 
+                    <span>every stage of the process</span>.
+                </h1>
+                <p class="overview-blurb__txt">
+                        Over 40 years of practice provides the 
+                        experience and resources to guide projects 
+                        from early ideas to successful development. 
+                        We can support your project from the beginning 
+                        steps of programming, site analysis, and feasibility 
+                        studies to facilitating community meetings for 
+                        grassroots support. We understand the importance 
+                        of listening, consensus building, and growing the 
+                        design based on common goals. The result is new 
+                        structures that are reinvigorating communities and 
+                        organizations across the Pacific Northwest.
+                </p>
+            </div>
+        </secion>
+    </body>
+</html>
