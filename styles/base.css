@@ -26,6 +26,7 @@ a {
 
 .flex {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -103,3 +104,54 @@ a {
 .nav-lnk:hover {
     color: rgb(231, 219, 107);
 }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer-lnks-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer-lnk {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0 3px;
+    padding: 8px 5px;
+    background: #407297;
+}
+
+.address,
+.copyright {
+    color: black;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+.address::before {
+    font-family: "icons";
+    content: "\ef79";
+}
+
+.site-design-btn {
+    background-image: url("../assets/images/bizango-logo.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    color: rgb(95, 95, 95);
+    font-size: 12px;
+    line-height: 20px;
+    margin: 10px;
+    opacity: 0.2;
+    height: 20px;
+    width: 175px;
+}
+
+

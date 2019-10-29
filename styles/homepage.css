@@ -26,6 +26,11 @@
     width: 150px;
 }
 
+.hero-txt img {
+    width: 475px;
+    margin-left: -160px;
+}
+
 .slick-dots {
     bottom: 100px !important;
 }
@@ -84,15 +89,15 @@
 }
 
 .skewed-blurb__main {
-    width: 1000px;
-    margin: 0 auto;
+    width: auto;
+    padding: 0 5%;
 }
 
 .blurb-headline {
     color:#3f7297;
     font-size: 38px;
     font-weight: 700;
-    margin-left: 70px;
+    margin-left: 0;
     width: 610px;
     
 }
@@ -103,21 +108,27 @@
 
 .blurb-txt {
     color: var(--gray);
-    margin-left: 258px;
-    text-align: right;
-    width: 598px;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-left: 0;
+    text-align: justify;
+    width: auto;
+    
 }
 
 .blurb-txt--strong {
+    margin-bottom: 35px;
     font-weight: 700;
 }
 
 .blurb-btn {
     position: relative;
-    color: var(--gray);
-    float: right;
-    padding: 5px 30px;
-    border: 1px solid var(--gray);
+    color: #3f7297;
+    float: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 8px 30px;
+    border: 1px solid #3f7297a4;
 }
 
 .blurb-btn::after,
@@ -127,7 +138,7 @@
     content: "\ea75"
 }
 
-.blur-btn::after {
+.blurb-btn::after {
     top: 6px;
     right: 10px;
 }
@@ -135,7 +146,7 @@
 .blurb-btn-img {
     position: absolute;
     top: 0px;
-    left: -20px;
+    left: -16px;
 }
 
 .team {
@@ -207,6 +218,30 @@
 }
 
 @media screen and (min-width: 990px) {
+
+    .skewed-blurb__main {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .blurb-headline {
+        margin-left: 70px;
+    }
+
+    .blurb-txt {
+        margin-left: 258px;
+        text-align: right;
+        width: 598px;
+    }
+
+    .blurb-btn {
+        float: right;
+    }
+
+    .blurb-btn::after {
+        top: 7px;
+    }
+
     .team-content {
         left: auto;
         right: 0;
