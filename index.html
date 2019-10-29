@@ -19,7 +19,8 @@
         <script>
             $(document).ready(function(){$(".hero-slideshow").slick({
                 arrows: true,
-                appendArrows: $('.hero-txt'),
+                appendArrows: $('.dots-container'),
+                appendDots: $('.dots-container'),
                 dots: true,
                 autoplay: true,
                 autoplaySpeed: 4000,
@@ -73,14 +74,15 @@
             
             <section class="hero">
                 <div class="hero-slideshow">
-                    <img src="./assets/images/hero-slick-01.jpg" alt="" class="slick-img">
-                    <img src="./assets/images/hero-slick-02.jpg" alt="" class="slick-img">
-                    <img src="./assets/images/hero-slick-03.jpg" alt="" class="slick-img">
-                    <img src="./assets/images/hero-slick-04.jpg" alt="" class="slick-img">
+                    <div class="slick-img" style='background: url("./assets/images/hero-slick-01.jpg") 50% 50%'></div>
+                    <div class="slick-img" style='background: url("./assets/images/hero-slick-02.jpg") 50% 50%'></div>
+                    <div class="slick-img" style='background: url("./assets/images/hero-slick-03.jpg") 50% 50%'></div>
+                    <div class="slick-img" style='background: url("./assets/images/hero-slick-04.jpg") 50% 50%'></div>
                 </div>
                 <div class="hero-txt">
                     <img src="./assets/images/site-logo-lg.png" alt="">
                 </div>
+                <div class="dots-container"></div>
             </section>
         </div>
         <section class="skewed-blurb">
