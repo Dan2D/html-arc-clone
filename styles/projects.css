@@ -9,17 +9,24 @@ main, div, a{
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
-    padding: 64px 0 25px 0;
+    padding: 64px 0 25px 10px;
+}
+
+.proj-cat-lnk-container {
+    flex-basis: 12.5%;
+    margin: 5px 0;
 }
 
 .proj-cat-lnk {
-    flex-basis: 12.5%;
-    margin: 5px 20px;
-    /* white-space: nowrap; */
+    font-size: 13px;
 }
 
 .proj-cat-lnk--all {
     font-weight: 700;
+}
+
+.proj-cat-lnk--space {
+    margin-left: 5px;
 }
 
 .grid {
@@ -83,7 +90,7 @@ main, div, a{
         align-content: flex-start;
     }
 
-    .proj-cat-lnk {
+    .proj-cat-lnk-container {
         flex-basis: 40%;
     }
 }
@@ -93,23 +100,29 @@ main, div, a{
         height: 100px;
     }
 
+    .proj-cat-lnk-container {
+        flex-basis: 24%;
+    }
+
     .proj-cat-lnk {
         height: 10px;
-        flex-basis: 24%;
         white-space: nowrap;
     }
 }
 
 @media screen and (min-width: 1100px){
     .project-categories-container {
-       margin: 0 5%;
+        width: 1000px;
+       margin: 0 auto;
+    }
+
+    .proj-cat-lnk-container {
+        flex-basis: 20%;
     }
 
     .proj-cat-lnk {
         height: 20px;
         margin: 0;
-        font-size: 14px;
-        flex-basis: 20%;
     }
 
     .grid {
@@ -134,6 +147,6 @@ main, div, a{
 
 @media screen and (min-width: 1150px) {
     .grid {
-        width: 1000px;
+        width: 1100px;
     }
 }
