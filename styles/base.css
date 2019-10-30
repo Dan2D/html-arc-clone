@@ -1,7 +1,7 @@
 @font-face {
     font-family: "icons";
     src: url("../assets/fonts/icofont.eot") format('embedded-opentype'),
-         url("../assets/fonts/icofont.woff") format('woff')
+         url("../assets/fonts/icofont.woff") format('woff');
 }
 
 body {
@@ -217,6 +217,7 @@ address {
 }
 
 .site-design-btn {
+    letter-spacing: normal;
     background-image: url("../assets/images/bizango-logo.png");
     background-position: center right;
     background-repeat: no-repeat;

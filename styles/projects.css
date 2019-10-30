@@ -61,7 +61,7 @@ main, div, a{
     color: white;
     text-align: center;
     background: rgba(63,114,151,.8);
-    height: 100%;
+    height: 99%;
     width: 100%;
     transition: all 300ms ease;
     z-index: 2;
