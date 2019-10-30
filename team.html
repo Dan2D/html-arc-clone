@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/team.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="header-container header-container--rel">
+            <header class="header-section-container glass-style flex">
+                <address class="header-section header-section--address">
+                    119 S MAIN ST #200, SEATTLE, WA 98104
+                </address>
+                <div class="header-section header-section--phone">
+                    <span>206. 322. 3322</span> 
+                </div>
+                <div class="header-section header-section--social-icons">
+                    <a href="#" class="icon instagram"></a>
+                    <a href="#" class="icon linkedin"></a>
+                </div>
+                <div class="header-section header-section--end"></div>
+            </header>
+            <nav class="nav-section-container glass-style glass-style--blue flex--nav">
+                <div class="nav-lnk-container nav-lnk-container--logo">
+                    <a href="/index.html" class="site-logo">
+                        <img src="./assets/images/site-logo.png" alt="" >
+                    </a>
+                </div>
+                <input id="submenu" class="submenu-checkbox" name="submenu" type="checkbox">
+                <label class="submenu-label" for="submenu">MENU</label>
+                <div class="menu-container">
+                    <div class="nav-lnk-container">
+                        <a href="/projects.html" class="nav-lnk">PROJECTS</a>
+                    </div>
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk current">OUR TEAM</a>
+                    </div>
+                    <div class="nav-lnk-container">
+                        <a href="#" class="nav-lnk">SERVICES</a>
+                    </div>
+                    <div class="nav-lnk-container nav-lnk-container--end">
+                        <a href="#" class="nav-lnk">CONTACT</a>
+                    </div>
+                    <div class="nav-lnk-container nav-lnk-container--social">
+                        <a href="#" class="icon instagram"></a>
+                        <a href="#" class="icon linkedin"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            <main class="team-content-container">
+                <section class="our-team frame_container">
+                    <div class="team-img-container">
+                        <img src="./assets/images/team-page/team-info-img.jpg" alt="" class="team-img">
+                    </div>
+                    <div class="team-info-container">
+                        <h1 class="team-title">Our Team</h1>
+                        <h3 class="team-headliner">
+                            DESIGN COLLABORATION IS KEY TO SUCCESSFUL DEVELOPMENT.
+                        </h3>
+                        <p class="team-txt">
+                            Our team of architects facilitates a creative and integrative
+                                design process that unites diverse needs and ideas. 
+                        </p>
+                        <p class="team-txt">
+                            We bring design criteria, opportunities, and requirements to the table
+                                early in the process.  We foster a team approach that develops strong 
+                                relationships between client, users, regulatory agencies, and the consultant team.
+                        </p>
+                        <p class="team-txt">
+                            ARC understands the importance of the public process to make sure the 
+                            ideas of all stakeholders are considered. We know that each project’s 
+                            success depends on a broad range of input and communication. 
+                        </p>
+                    </div>
+                </section>
+                <script>
+                    $(document).ready(function() {
+                        let $grid = $('.grid').masonry({
+                            itemSelector: '.grid-item',
+                            gutter: '.gutter-sizer',
+                            percentPosition: true,
+                            });
+    
+                            $grid.imagesLoaded().progress( function() {
+                            $grid.masonry('layout');
+                            });
+                        });
+                </script>
+                <div class="line-separator"></div>
+                <section class="team-members frame_container">
+                    <div class="grid">
+                        <div class="gutter-sizer"></div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-01.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Jeff Wandasiewicz</h5>
+                                    <p class="team-member-lnk__role">PARTNER</p>
+                                    <p class="team-member-lnk__email">WANDASIEWICZ@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-02.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Paul Ross Curtis</h5>
+                                    <p class="team-member-lnk__role">PARTNER</p>
+                                    <p class="team-member-lnk__email">CURTIS@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-03.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Daniel Podoll</h5>
+                                    <p class="team-member-lnk__role">PARTNER</p>
+                                    <p class="team-member-lnk__email">PODOLL@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-04.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Emily Wheeler</h5>
+                                    <p class="team-member-lnk__role">PARTNER</p>
+                                    <p class="team-member-lnk__email">WHEELER@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-05.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Tracie Gilles</h5>
+                                    <p class="team-member-lnk__role">OFFICE MANAGER</p>
+                                    <p class="team-member-lnk__email">GILLES@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile" >
+                            <img class="team-member-lnk__img" src="./assets/images/team-page/team-profile-01.jpg" alt="">
+                            <div class="gray"></div>
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">UNIVERSITY INTERN</h5>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-06.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Matthew Philbrook</h5>
+                                    <p class="team-member-lnk__role">ARCHITECT</p>
+                                    <p class="team-member-lnk__email">PHILBROOK@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-07.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">John Kamita</h5>
+                                    <p class="team-member-lnk__role">DSIGNER</p>
+                                    <p class="team-member-lnk__email">KAMITA@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-08.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Lillian Wu</h5>
+                                    <p class="team-member-lnk__role">DESIGNER</p>
+                                    <p class="team-member-lnk__email">WU@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-09.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name">Lauren Powers</h5>
+                                    <p class="team-member-lnk__role">ARCHITECT</p>
+                                    <p class="team-member-lnk__email">POWERS@<br>ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile" >
+                            <img class="team-member-lnk__img" src="./assets/images/team-page/team-profile-01.jpg" alt="">
+                            <div class="gray"></div>
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <h5 class="team-member-lnk__name"></h5>
+                                    <p class="team-member-lnk__role"></p>
+                                    <p class="team-member-lnk__email"></p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="grid-item team-member-tile">
+                            <img src="./assets/images/team-page/team-profile-logo.jpg" alt="" class="team-member-lnk__img">
+                            <a href="#" class="team-member-lnk">
+                                <span class="team-member-lnk__txt-container">
+                                    <p class="team-member-lnk__email">INFO@ARCARCHITECTS.COM</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        <footer>
+            <div class="footer-container">
+                <div class="flex-footer">
+                    <div class="footer-lnks-container">
+                        <a href="#" class="footer-lnk">PROJECTS</a>
+                        <a href="#" class="footer-lnk">OUR TEAM</a>
+                        <a href="#" class="footer-lnk">SERVICES</a>
+                        <a href="#" class="footer-lnk">CONTACT</a>
+                    </div>
+                    <address class="footer-section--address">119 MAIN ST #200, SEATTLE, WA 98104</address>
+                    <small class="footer-section--copyright">&copy; 2019 ARC ARCHITECTS</small>
+                </div>
+                <a href="#" class="site-design-btn">WEBSITE DESIGN</a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./scripts/index.js"></script>
+    </body>
+</html>
