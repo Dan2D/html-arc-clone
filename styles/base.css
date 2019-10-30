@@ -325,7 +325,7 @@ address {
     .footer-lnks-container, .footer-section--address, 
     .footer-section--copyright {
         text-align: center;
-        flex-grow: 1;
+        flex-basis: 33%;
     }
 
     .footer-seciton--address {
