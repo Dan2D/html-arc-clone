@@ -25,10 +25,6 @@ main, div, a{
     font-weight: 700;
 }
 
-.proj-cat-lnk--space {
-    margin-left: 5px;
-}
-
 .grid {
     width: 98%;
     margin: 40px 1%;
