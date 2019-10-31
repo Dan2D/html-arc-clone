@@ -291,7 +291,7 @@ address {
     background-color: white;
     border-top: 7px solid var(--dark-blue);
     padding: 25px 0 75px 0;
-    transform: translateY(-97px) skewY(4.4deg);
+    transform: translateY(-110px) skewY(4.4deg);
     z-index: 2;
 }
 
@@ -420,6 +420,7 @@ address {
 }
 
 .img-divider {
+    min-height: 350px;
     width: 100%;
 }
 
@@ -575,6 +576,71 @@ address {
         top: auto;
         background: none;
         width: auto;
+    }
+
+    .hero-txt {
+        width: 309px;
+        max-width: auto;
+    }
+
+    .hero-txt img {
+        width: 309px;
+    }
+
+    .slick-img {
+        width: 100%;
+        max-height: 800px;
+    }
+
+.img-divider-container--skewed-full::before,
+.img-divider-container--skewed-full::after,
+.img-divider-container--top::before,
+.img-divider-container--bottom::after {
+    height: 180px;
+}
+
+.img-divider-container--bottom::after {
+    transform: skewY(-4.4deg);
+}
+
+.img-divider-container--skewed-full::before,
+.img-divider-container--top::before {
+    top: -75px;
+}
+
+.img-divider-container--skewed-full::after,
+.img-divider-container--bottom::after {
+    left:0;
+    bottom: -75px;
+}
+
+    .skewed-blurb__main {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .blurb-headline {
+        width: 610px;
+        /* margin-left: 70px; */
+    }
+
+    .blurb-txt {
+        /* margin-left: 258px; */
+        text-align: left;
+        width: 598px;
+    }
+
+    .blurb-txt--right {
+        margin-left: none;
+        text-align: left;
+    }
+
+    .blurb-btn {
+        float: right;
+    }
+
+    .blurb-btn::after {
+        top: 7px;
     }
 
     .blurb-container--multi {

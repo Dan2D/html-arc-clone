@@ -73,45 +73,6 @@
 }
 
 @media screen and (min-width: 990px) {
-
-    .hero-txt {
-        width: 309px;
-        max-width: auto;
-    }
-
-    .hero-txt img {
-        width: 309px;
-    }
-
-    .slick-img {
-        width: 100%;
-        height: 800px;
-    }
-
-    .skewed-blurb__main {
-        width: 1000px;
-        margin: 0 auto;
-    }
-
-    .blurb-headline {
-        width: 610px;
-        margin-left: 70px;
-    }
-
-    .blurb-txt {
-        margin-left: 258px;
-        text-align: right;
-        width: 598px;
-    }
-
-    .blurb-btn {
-        float: right;
-    }
-
-    .blurb-btn::after {
-        top: 7px;
-    }
-
     .team-content {
         left: auto;
         right: 0;
