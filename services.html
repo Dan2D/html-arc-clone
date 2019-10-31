@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <link href="styles/base.css" rel="stylesheet">
+        <link href="styles/services.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){$(".hero-slideshow").slick({
+                arrows: true,
+                appendArrows: $('.dots-container'),
+                appendDots: $('.dots-container'),
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                slidestoshow: 1,
+                speed: 700
+            })});
+        </script>
+        <div class="hero-conatiner">
+            <div class="header-container">
+                <header class="header-section-container glass-style glass-style--header flex">
+                    <address class="header-section header-section--address">
+                        119 S MAIN ST #200, SEATTLE, WA 98104
+                    </address>
+                    <div class="header-section header-section--phone">
+                        <span>206. 322. 3322</span> 
+                    </div>
+                    <div class="header-section header-section--social-icons">
+                        <a href="#" class="icon instagram"></a>
+                        <a href="#" class="icon linkedin"></a>
+                    </div>
+                    <div class="header-section header-section--end"></div>
+                </header>
+                <nav class="nav-section-container glass-style flex--nav">
+                    <div class="nav-lnk-container nav-lnk-container--logo">
+                        <a href="" class="site-logo">
+                            <img src="./assets/images/site-logo.png" alt="" >
+                        </a>
+                    </div>
+                    <input id="submenu" class="submenu-checkbox" name="submenu" type="checkbox">
+                    <label class="submenu-label" for="submenu">MENU</label>
+                    <div class="menu-container">
+                        <div class="nav-lnk-container">
+                            <a href="./projects.html" class="nav-lnk">PROJECTS</a>
+                        </div>
+                        <div class="nav-lnk-container">
+                            <a href="./team.html" class="nav-lnk">OUR TEAM</a>
+                        </div>
+                        <div class="nav-lnk-container">
+                            <a href="./services.html" class="nav-lnk">SERVICES</a>
+                        </div>
+                        <div class="nav-lnk-container nav-lnk-container--end">
+                            <a href="#" class="nav-lnk">CONTACT</a>
+                        </div>
+                        <div class="nav-lnk-container nav-lnk-container--social">
+                            <a href="#" class="icon instagram"></a>
+                            <a href="#" class="icon linkedin"></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+            <section class="hero">
+                <div class="hero-slideshow">
+                    <div class="slick-img" style='background: url("./assets/images/home-page/hero-slick-01.jpg") 50% 50%'></div>
+                    <div class="slick-img" style='background: url("./assets/images/home-page/hero-slick-02.jpg") 50% 50%'></div>
+                    <div class="slick-img" style='background: url("./assets/images/home-page/hero-slick-03.jpg") 50% 50%'></div>
+                    <div class="slick-img" style='background: url("./assets/images/home-page/hero-slick-04.jpg") 50% 50%'></div>
+                </div>
+                <div class="dots-container"></div>
+            </section>
+        </div>
+        <section class="skewed-blurb">
+            <div class="skewed-child">
+                <div class="skewed-blurb__main blurb-container--multi">
+                    <div class="blurb-divider-1 frame_container">
+                        <h2 class="blurb-headline">
+                            Architecture in Service 
+                        </h2>
+                        <h5 class="blurb-sub-headline">
+                            ARC ARCHITECTS HAS PROVIDED EXCELLENT DESIGN
+                            SERVICES TO PUBLIC CLIENTS FOR MORE THAN 40 YEARS.
+                        </h5>
+                        <div class="blurb-txt">
+                            <p>
+                                Our projects serve a wide variety of civic and public 
+                                needs including community centers and pools, parks, 
+                                city halls, event centers, healthcare, educational facilities, 
+                                and affordable housing.
+                            </p>
+                            <p>
+                                In addition to design and construction contract administration 
+                                services, ARC Architects works with clients on all phases of planning.
+                                We have a skilled team of architects and project managers that 
+                                provide ​programming, site planning, ​feasibility studies, sustainable 
+                                design, LEED consulting, concept design, assessments, and 
+                                construction services. We place the highest priority on design, 
+                                quality control, and service.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blurb-divider-2 frame_container--left">
+                        <div class="rnd-btn-container">
+                            <img src="./assets/images/round-diamond.png" alt="" class="rnd-btn-accent">
+                            <a href="#" class="rnd-btn rnd-btn--service">
+                                PROGRAMMING, SITE PLANNING, MASTER PLANS &amp; FEASIBILITY
+                            </a>
+                        </div>
+                        <div class="rnd-btn-container">
+                            <img src="./assets/images/round-diamond.png" alt="" class="rnd-btn-accent">
+                            <a href="#" class="rnd-btn rnd-btn--service">
+                                CONCEPT DESIGN &amp; BUDGETS
+                            </a>
+                        </div>
+                        <div class="rnd-btn-container">
+                            <img src="./assets/images/round-diamond.png" alt="" class="rnd-btn-accent">
+                            <a href="#" class="rnd-btn rnd-btn--service">
+                                DESIGN THROUGH PERMITS &amp; PERMITS
+                            </a>
+                        </div>
+                        <div class="rnd-btn-container">
+                            <img src="./assets/images/round-diamond.png" alt="" class="rnd-btn-accent">
+                            <a href="#" class="rnd-btn rnd-btn--service">
+                                SUSTAINABLE DESIGN &amp; LEED CONSULTING
+                            </a>
+                        </div>
+                        <div class="rnd-btn-container">
+                            <img src="./assets/images/round-diamond.png" alt="" class="rnd-btn-accent">
+                            <a href="#" class="rnd-btn rnd-btn--service">
+                                ADA COMPLIANCE
+                            </a>
+                        </div>
+                        <div class="rnd-btn-container">
+                            <img src="./assets/images/round-diamond.png" alt="" class="rnd-btn-accent">
+                            <a href="#" class="rnd-btn rnd-btn--service">
+                                BUILDING ASSESSMENTS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="img-divider-container img-divider-container--up">
+            <img src="./assets/images/service-page/img-divider-01.jpg" alt="" class="img-divider">
+        </div>
+        <section class="blurb-container blurb-container--multi">
+            <div class="blurb-divider-1 frame_container">
+                <h5 class="blurb-headline">
+                    Programming, Site Planning, Master Plans &amp; Feasibility 
+                </h5>
+                <div class="blurb-txt">
+                    <p>
+                        ARC Architects has worked with many public agencies and 
+                        non-profits for programming, planning, and feasibility studies. 
+                        We know how to bring together multiple stakeholders and develop 
+                        direction and consensus.
+                    </p>
+                    <p>
+                        Successful facility and site planning requires knowledge of program needs, 
+                        agency mission, public perception and input, and an understanding of site 
+                        attributes, such as zoning, sensitive areas, climate, topography, 
+                        connectivity, and infrastructure. We start with existing studies, site maps, 
+                        and drawings to understand issues that frame the planning effort and look 
+                        for constraints and opportunities for the site. Key stakeholders are 
+                        interviewed to understand and define the program. In addition to interviews 
+                        and public input, we have consultants who provide demographics, market 
+                        analysis, and cost recovery projections.
+                    </p>
+                    <p>
+                        ARC Architects helps organizations plan for their future.
+                    </p>
+                </div>
+            </div>
+            <div class="blurb-divider-2 frame_container">
+                <h5 class="blurb-sub-headline">
+                    RELEVANT PROJECTS
+                </h5>
+                <div class="blurb-txt">
+                    <p>
+                        Ashwood Community Center and Affordable Housing Master Plan
+                        <br>
+                        Bellevue Aquatic Center Feasibility Study
+                        <br>
+                        Lake City Library Renovation and Addition, Seattle, WA
+                        <br>
+                        Longview Conference and Community Center
+                        <br>
+                        King Conservation District Programming & Site Assessments
+                        <br>
+                        Kirkland City Hall Assessment and Programming
+                        <br>
+                        Mukilteo City Hall & Community Center Feasibilty Study
+                        <br>
+                        New Holly Neighborhood Campus, Seattle, WA
+                        <br>
+                        North Kitsap Regional Event Center Master Plan
+                        <br>
+                        Redmond City Hall Assessment
+                        <br>
+                        Sammamish City Hall & Police & Parks Master Plan
+                        <br>
+                        Snoqualmie Community & Aquatic Center Study
+                        <br>
+                        South Whidbey Recreation Center Feasibility Study
+                        <br>
+                        Utilities and Trades Commission Programming
+                        <br>
+                        Washougal Civic Master Plan
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="img-divider-container img-divider-container--skewed-full">
+            <img src="./assets/images/service-page/img-divider-02.jpg" alt="" class="img-divider">
+        </div>
+        <section class="blurb-container frame_container">
+            <h5 class="blurb-headline blurb-headline--small">
+                Concept Design &amp; Budgets
+            </h5>
+            <div class="blurb-txt">
+                <p>
+                    Early design work is critical to the success of every project. 
+                    We collaborate with our clients to develop concept designs and 
+                    images that define their goals and site potential. Budgets are 
+                    crafted, refined, and adjusted to meet fundraising needs. 
+                    Our extensive experience working through this process, generating 
+                    multiple options and ideas, and guiding the decision making, 
+                    gives our clients confidence in their successful development.
+                </p>
+                <p>
+                    We develop concept options with out clients’ input and facilitate 
+                    public meetings as needed. Our team is experienced with public 
+                    meetings and working within the public process to gather the 
+                    necessary input from the community, staff, and key decision makers.
+                </p>
+            </div>
+        </section>
+        <div class="img-divider-container img-divider-container--top">
+            <img src="./assets/images/service-page/img-divider-03.jpg" alt="" class="img-divider">
+        </div>
+        <section class="blurb-container frame_container">
+            <h5 class="blurb-headline blurb-headline--small">
+                    Design Through Permits &amp; Construction
+            </h5>
+            <div class="blurb-txt">
+                <p>
+                    We begin the permit process with early meetings with City Permit Agencies.
+                    Their review and input in the early stages is important for all projects.
+                    Often times projects have special circumstances that the design team needs
+                    to negotiate with permit agencies.  ARC is well experienced with working
+                    with local and state codes to develop options to meet client needs.
+                </p>
+                <p>
+                    Construction documents include the drawings and product specifications, 
+                    and we work diligently to provide quality documents to the contractors.  
+                    ARC has developed good working relationships with many contractors.  
+                    We bring an attitude of shared responsibility to the table and appreciate 
+                    the contractor's input during design and work together to solve issues during construction.
+                </p>
+            </div>
+        </section>
+        <div class="img-divider-container img-divider-container--bottom">
+            <img src="./assets/images/service-page/img-divider-04.jpg" alt="" class="img-divider">
+        </div>
+        <section class="blurb-container blurb-container--multi">
+            <div class="blurb-divider-1 frame_container">
+                <h5 class="blurb-headline">
+                    Sustainable Design &amp; LEED Consulting
+                </h5>
+                <div class="blurb-txt">
+                    <p>
+                            An efficient building design can help reduce energy and water use, 
+                            improve indoor air quality, and minimize materials use. ARC Architects 
+                            has a long history of integrating sustainable design into its projects 
+                            by considering the relationship between first costs, long-term costs, 
+                            and the benefits of environmentally responsible design. This integrated 
+                            design approach connects the site to the building and its users. We are 
+                            committed to incorporating sustainable and durable design into every project.
+                    </p>
+                    <p>
+                            We have shepherded multiple projects through LEED certification and are also 
+                            well-versed in the Evergreen Sustainable Development Standards (ESDS) 
+                            associated with Washington State Housing Trust Funds and tax credit projects. 
+                            We are committed to developing appropriate sustainable strategies for each project.
+                    </p>
+                </div>
+            </div>
+            <div class="blurb-divider-2 frame_container">
+                <h5 class="blurb-sub-headline">
+                    RELEVANT PROJECTS
+                </h5>
+                <div class="blurb-txt">
+                    <p>
+                            2914 South McClellan Apartments - ESDS
+                            <br>
+                            Adams View Family Housing - ESDS
+                            <br>
+                            KCHA Bellevue Apartments Renovation - ESDS
+                            <br>
+                            KCHA Woodlawn North Apartments Renovation - ESDS
+                            <br>
+                            Mt. Baker Village Renovation - ESDS
+                            <br>
+                            Pacific Pearl Family Housing - ESDS
+                            <br>
+                            Pivotal Point Family Housing - ESDS
+                            <br>
+                            Mukilteo City Hall, Mukilteo - LEED Gold
+                            <br>
+                            199 Blaine Biotechnology - LEED Gold
+                            <br>
+                            Rainier Beach Community Center & Pool - LEED Gold
+                            <br>
+                            Auburn Community Center - LEED Silver
+                            <br>
+                            Birch Creek Youth Center - LEED Silver
+                            <br>
+                            Eastside Tacoma Community Center & Pool - LEED Silver
+                            <br>
+                            Fircrest Community Center - LEED Silver (in design)
+                            <br>
+                            Lynnwood Neighborhood Center - LEED Silver (in design)
+                            <br>
+                            Sammamish City Hall and Police - LEED Silver
+                            <br>
+                            Port Townsend City Hall - LEED Silver
+                            <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="img-divider-container">
+            <img src="./assets/images/service-page/img-divider-05.jpg" alt="" class="img-divider">
+        </div>
+        <section class="blurb-container frame_container">
+            <h5 class="blurb-headline blurb-headline--small">
+                Universal Design
+            </h5>
+            <div class="blurb-txt">
+                <p>
+                    Designing projects so that all visitors feel comfortable 
+                    and welcome is something that ARC Architects strives to do in 
+                    each of our projects. Complying with ADA/ABA standards is standard 
+                    for every projects. We have been involved in numerous renovation 
+                    projects that required bringing projects into compliance. 
+                    Careful in-field assessment and documentation of existing 
+                    conditions such as parking, walkways, doors, restrooms and 
+                    fixtures is key to successful implementation of the necessary 
+                    improvements to create safe and universal accessible places. 
+                    ARC has a multi-year on-call contract with City of Seattle to 
+                    review ADA and other accessibility requirements for public projects 
+                    designed for the city. 
+                </p>
+            </div>
+        </section>
+        <div class="img-divider-container img-divider-container--top">
+            <img src="./assets/images/service-page/img-divider-06.jpg" alt="" class="img-divider">
+        </div>
+        <section class="blurb-container blurb-container--multi">
+            <div class="blurb-divider-1 frame_container">
+                <h5 class="blurb-headline">
+                    Building Assesments
+                </h5>
+                <div class="blurb-txt">
+                    <p>
+                        ARC Architects has significant experience in existing building condition 
+                        assessments and budget planning, which are important for organizations to 
+                        maintain their buildings and plan for future renovations and repairs. 
+                        All renovation projects begin with an assessment of the existing building, 
+                        the envelope, mechanical and electrical systems, code issues, and finishes. 
+                        Through this assessment process we discuss options for renovation and upgrades 
+                        to existing systems. With an understanding of the potential costs, the team 
+                        can prioritize the required work and determine a long-term asset management 
+                        plan in order to extend the life of the building.
+                    </p>
+                    <p>
+                        At times the assessment determines that renovation will be more expensive than 
+                        replacement.  Depending on the design of the existing building, the additional 
+                        expense may be worth the cost to save a historic structure or important community 
+                        resource. Our experience provides us the necessary tools to quickly assess and 
+                        help define scope of future planning and budgets.
+                    </p>
+                </div>
+            </div>
+            <div class="blurb-divider-2 frame_container">
+                <h5 class="blurb-sub-headline">
+                    RELEVANT PROJECTS
+                </h5>
+                <div class="blurb-txt">
+                    <p>
+                        Camp Korey Buildings
+                        <br>
+                        Kirkland City Hall
+                        <br>
+                        WA State Utilities and Transportation Commission
+                        <br>
+                        Seattle Fire Station 25, 32, and 34
+                        <br>
+                        Teen Parent Home Center
+                        <br>
+                        Central Area Senior Center
+                        <br>
+                        DV Shelter, Everett Guard Building
+                        <br>
+                        Vashon Household Housing
+                        <br>
+                        Kittitas Armory
+                        <br>
+                        Jefferson Community Center
+                        <br>
+                        Queen Anne Community Center
+                        <br>
+                        Loyal Heights Community Center
+                        <br>
+                        Green Lake Community Center & Evans Pool
+                        <br>
+                        Hiawatha Community Center
+                        <br>
+                        Puyallup Memorial Community Center
+                        <br>
+                        Rainier Beach Community Center & Pool
+                        <br>
+                        Redmond City Hall 
+                        <br>
+                        William Shore Memorial Pool
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="img-divider-container img-divider-container--top">
+            <img src="./assets/images/service-page/img-divider-07.jpg" alt="" class="img-divider">
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="flex-footer">
+                    <div class="footer-lnks-container">
+                        <a href="./projects.html" class="footer-lnk">PROJECTS</a>
+                        <a href="./team.html" class="footer-lnk">OUR TEAM</a>
+                        <a href="./services.html" class="footer-lnk">SERVICES</a>
+                        <a href="#" class="footer-lnk">CONTACT</a>
+                    </div>
+                    <address class="footer-section--address">119 MAIN ST #200, SEATTLE, WA 98104</address>
+                    <small class="footer-section--copyright">&copy; 2019 ARC ARCHITECTS</small>
+                </div>
+                <a href="#" class="site-design-btn">WEBSITE DESIGN</a>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./scripts/index.js"></script>
+    </body>
+</html>
