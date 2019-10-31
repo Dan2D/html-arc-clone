@@ -592,27 +592,31 @@ address {
         max-height: 800px;
     }
 
-.img-divider-container--skewed-full::before,
-.img-divider-container--skewed-full::after,
-.img-divider-container--top::before,
-.img-divider-container--bottom::after {
-    height: 180px;
-}
+    .img-divider-container--skewed-full::before,
+    .img-divider-container--skewed-full::after,
+    .img-divider-container--top::before,
+    .img-divider-container--bottom::after {
+        height: 180px;
+    }
 
-.img-divider-container--bottom::after {
-    transform: skewY(-4.4deg);
-}
+    .img-divider-container--bottom::after {
+        transform: skewY(-4.4deg);
+    }
 
-.img-divider-container--skewed-full::before,
-.img-divider-container--top::before {
-    top: -75px;
-}
+    .img-divider-container--skewed-full::before,
+    .img-divider-container--top::before {
+        top: -75px;
+    }
 
-.img-divider-container--skewed-full::after,
-.img-divider-container--bottom::after {
-    left:0;
-    bottom: -75px;
-}
+    .img-divider-container--skewed-full::after,
+    .img-divider-container--bottom::after {
+        left:0;
+        bottom: -75px;
+    }
+
+    .skewed-blurb {
+        padding-bottom: 115px;
+    }
 
     .skewed-blurb__main {
         width: 1000px;
